@@ -62,7 +62,7 @@ main.gallery{
       box-shadow: 0 10px 30px rgba(195, 27, 27, 0.6);
 }
          
-.project:hover .image {
+.project:hover img {
       filter: grayscale(1);
 }
 

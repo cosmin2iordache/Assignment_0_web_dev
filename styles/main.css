@@ -70,18 +70,21 @@ body {
 .main_main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      background-color: var(--var2);
+      /* background-color: var(--var2); */
       grid-gap: .5rem;
       border-radius: 5px;
       
 }
 .article{
       border-radius: 5px;
-      background-color: var(--var4);
+      /* background-color: var(--var4); */
+      box-shadow: 0 .5rem .2rem rgba(74, 99, 42, 0.5);
+
 }
 
 .article:hover{
-      box-shadow: 0 5px 15px rgb(233, 32, 173);
+      box-shadow: 0 5px 15px rgb(103, 81, 231);
+      background-color: rgb(175, 177, 171);
 }
 
 /*---------------Main Aside Section----------------------*/
@@ -89,7 +92,7 @@ body {
       background-color: var(--var3);
       text-align: var(--var5);
       border-radius: 5px;
-
+      padding: 1rem;
 }
 
 .main_aside img {
@@ -104,18 +107,18 @@ body {
       border-radius: 100%;
       transition: background-size 0.3s ease;
       filter: grayscale(1);
-      transition: background-size 0.3s ease; 
+      transition: background-size 0.3s ease;
 }
 /*---------Main Aside Social Media Icons--------------*/
+.main_aside h2, .main_aside img {padding: 1.5rem;}
+
 .main_aside ul{
       text-align: centre;
 }
 
 .main_aside ul li{
       display: inline-block;
-      font-size: 3rem;
-      /* margin: 5px; */
-      /* padding: 5px; */
+      font-size: 2.5rem;
 }
 .main_aside ul li a:hover {
       color: red;
@@ -155,7 +158,8 @@ body {
 
 
 }
-@media (max-width: 650px) {
+
+@media (max-width: 810px) {
       .img_up{
             grid-column: 1/2;
             grid-row: 1/2;
