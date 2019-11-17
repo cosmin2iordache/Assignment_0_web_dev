@@ -5,6 +5,7 @@
   --var2: rgb(99, 163, 246);
   --var3: rgb(201, 231, 120);
   --var4: rgb(173, 78, 78);
+  --var5: center;
 }
 
 * { margin: 0; }
@@ -16,9 +17,7 @@ html {
 }
 
 body {
-      background-color: var(--var1) #ccc;
-      /* margin: 20px 20px; */
-      /* line-height: 1.4; */
+      background-color: var(--var1);
 }
 
 /*----------------------Header--------------------------------*/
@@ -63,24 +62,34 @@ body {
 /* -----------------Middle section--------------------------*/
 .middle {
       display: grid;
-      grid-template-columns: 75% 25%;
+      grid-template-columns: auto 1fr;
       margin: 2rem 1rem;
-
+      grid-gap: .5rem;
 }
 /*------------------Main Main Section ----------------------*/
 .main_main {
       display: grid;
-      /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 5rem;
       background-color: var(--var2);
-      grid-gap: 10px;
+      grid-gap: .5rem;
+      border-radius: 5px;
+      
+}
+.article{
+      border-radius: 5px;
+      background-color: var(--var4);
+}
+
+.article:hover{
+      box-shadow: 0 5px 15px rgb(233, 32, 173);
 }
 
 /*---------------Main Aside Section----------------------*/
 .main_aside {
       background-color: var(--var3);
-      text-align: center;
+      text-align: var(--var5);
+      border-radius: 5px;
+
 }
 
 .main_aside img {
@@ -105,8 +114,8 @@ body {
 .main_aside ul li{
       display: inline-block;
       font-size: 3rem;
-      margin: 5px;
-      padding: 5px;
+      /* margin: 5px; */
+      /* padding: 5px; */
 }
 .main_aside ul li a:hover {
       color: red;
@@ -117,7 +126,7 @@ body {
       display: grid;
       background-color: var(--var4);
       margin: 2rem 1rem;
-
+      border-radius: 5px;
 }
 
 
@@ -138,7 +147,7 @@ body {
       
       .middle{
             display: grid;
-            grid-template-columns: 60% 40%;
+            grid-template-columns: auto 1fr;
       }
       main{
             grid-template-columns: 1fr;

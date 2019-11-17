@@ -66,10 +66,17 @@ main.gallery{
       filter: grayscale(1);
 }
 
+.project:hover p {
+      color: royalblue;
+      text-transform: uppercase;
+      text-align: center;
+}
+
 .project img {
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 5px;
 }
 
 
