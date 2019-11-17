@@ -1,16 +1,10 @@
-/* for any variables... don't know yet if i'm aloud to use them :) */
+/* for any variables... I don't know yet if i'm aloud to use them :) */
 
 :root {
   --var1: rgb(255, 255, 255);
   --var2: rgb(99, 163, 246);
   --var3: rgb(201, 231, 120);
   --var4: rgb(173, 78, 78);
-  /*
-  --var1: rgb(136, 130, 130);
-  --var2: rgb(136, 130, 130);
-  --var3: rgb(136, 130, 130);
-  --var4: rgb(136, 130, 130);
-  */
 }
 
 * { margin: 0; }
@@ -18,7 +12,6 @@
 html {
       /* include any border or padding we add in the width or height we declare*/
       box-sizing: border-box; 
-      /* Font family...*/
       font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
@@ -28,7 +21,7 @@ body {
       /* line-height: 1.4; */
 }
 
-/* -------------Header--------------------------------*/
+/*----------------------Header--------------------------------*/
 
 .main_header {
       display: grid;
@@ -38,7 +31,7 @@ body {
 }
 
 .main_header h1 {
-      /* padding: 1em; */
+      font-size: 2.4rem;
       margin: 0.5em;
       text-align: left;
 }
@@ -47,7 +40,7 @@ body {
       width: 5rem;
 }
 
-/* -------------Navigation--------------------------------*/
+/*-----------------Navigation--------------------------------*/
 
 .navigator ul li {
       display: inline-block;
@@ -67,17 +60,21 @@ body {
       color: rgb(216, 120, 42);
 }
 
-/* -------------Middle section--------------------------------*/
+/* -----------------Middle section--------------------------*/
 .middle {
       display: grid;
       grid-template-columns: 70% 30%;
 }
-
+/*------------------Main Main Section ----------------------*/
 .main_main {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
+      grid-gap: 5rem;
       background-color: var(--var2);
       grid-gap: 10px;
 }
 
+/*---------------Main Aside Section----------------------*/
 .main_aside {
       background-color: var(--var3);
       text-align: center;
@@ -97,14 +94,7 @@ body {
       filter: grayscale(1);
       transition: background-size 0.3s ease; 
 }
-
-main {
-      display: grid;
-      /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
-      grid-gap: 5rem;
-}
-
-
+/*---------Main Aside Social Media Icons--------------*/
 .main_aside ul{
       text-align: centre;
 }
@@ -118,6 +108,8 @@ main {
 .main_aside ul li a:hover {
       color: red;
 }
+
+/*------------Main Footer Section-------------------*/
 .main_footer {
       display: grid;
       background-color: var(--var4);
@@ -125,7 +117,7 @@ main {
 
 
 /*---------------Responsivnes----------------*/
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
       .img_up{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -174,4 +166,89 @@ main {
 
 }
 
-/*------------------The End-------------------*/
+/*---------The End-------------------*/
+
+
+
+/*----------Gallery HTML------------------*/
+
+.container{
+      margin: 2rem 1rem;
+}
+.gallery{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1.5rem;
+      grid-auto-rows: minmax(100px, auto);
+}
+
+.gallery-item{
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      transition: all .3s;
+      overflow: hidden;
+      position: relative;
+}
+         
+
+
+
+.gallery-item:hover .image{
+      filter: grayscale(1);
+}
+
+/*
+.image{
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      object-fit: cover;
+}
+
+.middle{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+}
+            
+
+            
+.gallery-item:hover .middle{
+      opacity: 1
+};
+            
+.gallery-item:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+            
+.text{
+      color: white;
+      font-size: 2.5em;
+      padding: 16px 32px;
+      font-family: Oswald, sans-serif;
+}
+            
+@media (max-width: 500px){
+      .gallery-item, body{
+            max-width: 30%;
+            grid-column: 2;
+            font-family: Oswald, sans-serif;
+            text-align: left;
+      }
+      div.containger, h1 {
+            text-align: left;
+            margin-left: 2em;
+      }
+      div.text{
+            font-size: 2.5em;
+      }
+}
+            */
