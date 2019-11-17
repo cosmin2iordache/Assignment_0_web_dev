@@ -1,14 +1,19 @@
 /* for any variables... don't know yet if i'm aloud to use them :) */
-* {
-      margin: 0;
-}
 
 :root {
-  --var1: #ccc;
-  --var2: rgb(148, 168, 121);
-  --var3: rgb(143, 143, 197);
-  --var4: rgb(216, 134, 79);
+  --var1: rgb(255, 255, 255);
+  --var2: rgb(99, 163, 246);
+  --var3: rgb(201, 231, 120);
+  --var4: rgb(173, 78, 78);
+  /*
+  --var1: rgb(136, 130, 130);
+  --var2: rgb(136, 130, 130);
+  --var3: rgb(136, 130, 130);
+  --var4: rgb(136, 130, 130);
+  */
 }
+
+* { margin: 0; }
 
 html {
       /* include any border or padding we add in the width or height we declare*/
@@ -18,39 +23,12 @@ html {
 }
 
 body {
-      background: var(--var1) /*#ccc*/;
+      background-color: var(--var1) #ccc;
       /* margin: 20px 20px; */
       /* line-height: 1.4; */
-      
-}
-.middle {
-      display: grid;
-      grid-template-columns: 75% 25%;
 }
 
-.main_main {
-      background-color: var(--var2);
-      grid-gap: 10px;
-
-}
-
-.main_aside {
-      background-color: var(--var3);
-      text-align: center;
-}
-.main_aside img {
-      border-style: none;
-      border-radius: 100%;
-      filter: grayscale(0);
-}
-.cosmin:hover{
-      filter: grayscale(1);
-      border-style: none;
-      border-radius: 100%;
-      transition: background-size 0.3s ease;
-      filter: grayscale(1);
-      transition: background-size 0.3s ease; 
-}
+/* -------------Header--------------------------------*/
 
 .main_header {
       display: grid;
@@ -63,11 +41,13 @@ body {
       /* padding: 1em; */
       margin: 0.5em;
       text-align: left;
-
 }
+
 .main_header img {
       width: 5rem;
 }
+
+/* -------------Navigation--------------------------------*/
 
 .navigator ul li {
       display: inline-block;
@@ -87,17 +67,64 @@ body {
       color: rgb(216, 120, 42);
 }
 
-main {
+/* -------------Middle section--------------------------------*/
+.middle {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      grid-template-columns: 70% 30%;
 }
 
+.main_main {
+      background-color: var(--var2);
+      grid-gap: 10px;
+}
+
+.main_aside {
+      background-color: var(--var3);
+      text-align: center;
+}
+
+.main_aside img {
+      border-style: none;
+      border-radius: 100%;
+      filter: grayscale(0);
+}
+
+.cosmin:hover{
+      filter: grayscale(1);
+      border-style: none;
+      border-radius: 100%;
+      transition: background-size 0.3s ease;
+      filter: grayscale(1);
+      transition: background-size 0.3s ease; 
+}
+
+main {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
+      grid-gap: 5rem;
+}
+
+
+.main_aside ul{
+      text-align: centre;
+}
+
+.main_aside ul li{
+      display: inline-block;
+      font-size: 3rem;
+      margin: 5px;
+      padding: 5px;
+}
+.main_aside ul li a:hover {
+      color: red;
+}
 .main_footer {
       display: grid;
       background-color: var(--var4);
-
 }
 
+
+/*---------------Responsivnes----------------*/
 @media (max-width: 1000px) {
       .img_up{
             grid-column: 1/2;
@@ -146,3 +173,5 @@ main {
 
 
 }
+
+/*------------------The End-------------------*/
