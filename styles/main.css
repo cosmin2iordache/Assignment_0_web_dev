@@ -40,6 +40,10 @@ body {
 }
 
 /*-----------------Navigation--------------------------------*/
+.navigator ul {
+list-style: none;
+
+}
 
 .navigator ul li {
       display: inline-block;
@@ -135,12 +139,18 @@ body {
 
 .main_aside ul{
       text-align: centre;
+      list-style: none;
 }
 
 .main_aside ul li{
       display: inline-block;
       font-size: 2.5rem;
 }
+
+.main_aside a, 
+.main_aside a:visited, 
+.main_aside a:active {
+      color: blue;}
 .main_aside ul li a:hover {
       color: red;
 }
