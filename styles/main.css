@@ -78,14 +78,17 @@ body {
 .article{
       border-radius: 5px;
       /* background-color: var(--var4); */
-      box-shadow: 0 .5rem .2rem rgba(74, 99, 42, 0.5);
+      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
 
 }
 
 .article:hover{
       box-shadow: 0 5px 15px rgb(103, 81, 231);
       background-color: rgb(175, 177, 171);
+      transition-duration: 3s; /*niceeeeee*/
 }
+
+
 
 /*---------------Main Aside Section----------------------*/
 .main_aside {
@@ -101,7 +104,7 @@ body {
       filter: grayscale(0);
 }
 
-.cosmin:hover{
+.cosmin img:hover{
       filter: grayscale(1);
       border-style: none;
       border-radius: 100%;
@@ -109,6 +112,25 @@ body {
       filter: grayscale(1);
       transition: background-size 0.3s ease;
 }
+
+.text_effect {
+      display: block;
+      height: 3rem;
+      animation-name: text_anime;
+      animation-duration: 3s;
+}
+@keyframes text_anime {
+      0% {color: white;}
+      20% {color: rgb(148, 147, 153);}
+      40% {color: rgb(92, 89, 89);}
+      60% {color: rgb(53, 54, 53);}
+      80% {color: rgb(37, 37, 37);}
+      99%{color: rgb(10, 10, 10);}
+      100%{transform: rotateY(360deg);}      
+      }
+}
+
+
 /*---------Main Aside Social Media Icons--------------*/
 .main_aside h2, .main_aside img {padding: 1.5rem;}
 
