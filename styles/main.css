@@ -77,8 +77,8 @@ list-style: none;
       /* background-color: var(--var2); */
       grid-gap: .5rem;
       border-radius: 5px;
-      
 }
+
 .article{
       border-radius: 5px;
       /* background-color: var(--var4); */
@@ -88,8 +88,8 @@ list-style: none;
 
 .article:hover{
       box-shadow: 0 5px 15px rgb(103, 81, 231);
-      background-color: rgb(175, 177, 171);
-      transition-duration: 3s; /*niceeeeee*/
+      background-color: rgb(201, 202, 200);
+      transition-duration: 2s; /*niceeeeee*/
 }
 
 
@@ -117,6 +117,7 @@ list-style: none;
       transition: background-size 0.3s ease;
 }
 
+/*----------------Using a keyframe--------------------------*/
 .text_effect {
       display: block;
       height: 3rem;
@@ -130,7 +131,7 @@ list-style: none;
       60% {color: rgb(53, 54, 53);}
       80% {color: rgb(37, 37, 37);}
       99%{color: rgb(10, 10, 10);}
-      100%{transform: rotateY(360deg);}      
+      100%{transform: rotateY(360deg);}   
 }
 
 
@@ -152,16 +153,23 @@ list-style: none;
 .main_aside a:active {
       color: blue;}
 .main_aside ul li a:hover {
-      color: red;
+      color: rgb(238, 25, 25);
 }
 
 /*------------Main Footer Section-------------------*/
 .main_footer {
       display: grid;
-      background-color: var(--var4);
+      grid-template-columns: 1fr 1fr 1fr;
+      /* background-color: var(--var4); */
       margin: 2rem 1rem;
       border-radius: 5px;
+      grid-gap: .5rem;
 }
+ .main_footer section {
+      background-color: rgb(27, 114, 226);
+      border-radius: .5rem;
+      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
+ }
 
 
 /*---------------Responsivnes----------------*/
@@ -186,7 +194,7 @@ list-style: none;
       main{
             grid-template-columns: 1fr;
       }
-
+      
 
 }
 
@@ -210,9 +218,10 @@ list-style: none;
             display: grid;
             grid-template-columns: 1fr;
       }
-      
-
-
+      .main_footer {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+      }
 }
 
 /*---------The End-------------------*/
