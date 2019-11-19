@@ -79,6 +79,21 @@ main.gallery{
       border-radius: 5px;
 }
 
+/*------------Main Footer Section-------------------*/
+.main_footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* background-color: var(--var4); */
+      margin: 2rem 1rem;
+      border-radius: 5px;
+      grid-gap: .5rem;
+}
+ .main_footer section {
+      background-color: rgb(145, 186, 240);
+      border-radius: .5rem;
+      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
+ }
+
 
 /*---------------Responsivnes----------------*/
 @media (max-width: 1100px) {
@@ -96,6 +111,12 @@ main.gallery{
       }
 }
 
+@media (max-width: 730px) {
+      .main_footer {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+      }
+}
 @media (max-width: 650px) {
       .img_up{
             grid-column: 1/2;
