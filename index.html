@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cosmin Iordache News Paper</title>
+    
+    <!--Adding an icon at the page title-->>
     <link rel="shortcut icon" type="image/png" href="media/icon.png">
+
+    <!--Using Google APIS - Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+
+    <!--Linking the CSS file-->
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+
+    <!-- Using Font Awesome for the social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">    
 </head>
 <body>
 
+<!-- For semantics I used header tag -->
 <header class="main_header">
-<img class="img_up"src="media/cof_black_hex.png" alt="The logo of the news paper">
-<h1 class="h1_up">Cosmin Iordache Landing Page</h1>
-<nav class="navigator">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</nav>
+    <img class="img_up"src="media/cof_black_hex.png" alt="The logo of the news paper">
+
+    <!-- The main header of the page  -->
+    <h1 class="h1_up">Cosmin Iordache Landing Page</h1>
+
+    <!-- The navigation bar -->
+    <nav class="navigator">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
 </header>
 
+<!-- Aslo for semantics I used the main and aside tags - which i wraped in a div tag to be able to use the in a grid layout for responsivenes -->
 <div class="middle">
     <main class="main_main">
+
+<!-- Each part of the main tag is wraped up in an article tag to be distinguished from th others and for semantics  -->
     <article class="article">
         <h2>Why you shoud hire me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil quibusdam minima esse itaque quisquam tempora quia veritatis autem ipsam?</p>
@@ -35,11 +51,11 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sequi quidem laborum porro labore voluptas itaque repudiandae quasi numquam culpa, deserunt obcaecati ex excepturi ipsum?</p></article>
     <article class="article">
         <h2>Random things</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima tenetur culpa? Eum tempora eveniet perspiciatis, culpa voluptatibus eaque recusandae nam harum assumenda obcaecati.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero expedita quaerat reiciendis explicabo sed ullam in minus at, consequatur quos fugiat vel cupiditate! Quidem nemo quisquam consequuntur autem repellat excepturi facilis adipisci nescit</p>
     </article>
     </main>
 
-
+<!-- The aside tag - which is the week 3 code challenge - modified and whith socual media icons added -->
     <aside class="main_aside">
             <div class="cosmin">
                     <h2> Hi, I'm Cosmin !!</h2>
@@ -54,6 +70,8 @@
             </ul>   
     </aside>
 </div>
+
+<!-- The footer tag containing useful links and copyright section -->
 <footer class="main_footer">
     <section>
         <ul>
@@ -63,15 +81,16 @@
             <li>Northampton Borough Council</li>
         </ul>
     </section>
+    
     <section>
         <ul>
             <li><strong>University links</strong></li>
             <li>Northampton University</li>
             <li>Change Maker Hub</li>
             <li>Linkedln</li>
-                
         </ul>
     </section>
+    
     <section>
             <p>Copyright &copy Cosmin Iordache</p>
     </section>
