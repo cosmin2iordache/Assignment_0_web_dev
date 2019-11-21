@@ -90,6 +90,12 @@ list-style: none;
       background-color: rgb(201, 202, 200);
       transition-duration: 2s; /*niceeeeee*/
 }
+.main_main p {
+      padding: 1.2rem;
+}
+.main_main h2 {
+      text-align: center;
+}
 
 /*---------------Main Aside Section----------------------*/
 .main_aside {
