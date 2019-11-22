@@ -243,7 +243,7 @@ main.gallery{
       }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 810px) {
       .img_up{
             grid-column: 1/2;
             grid-row: 1/2;
